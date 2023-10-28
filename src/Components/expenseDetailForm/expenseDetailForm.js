@@ -38,7 +38,7 @@ const StyledButton =styled("button")(({ theme }) => ({
   }));
 
 
-const ExpenseForm = () => {
+const ExpenseDetailForm = () => {
 
   return (
     <StyledCard >
@@ -100,4 +100,4 @@ const ExpenseForm = () => {
   );
 };
 
-export default ExpenseForm;
+export default ExpenseDetailForm;

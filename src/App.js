@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import ExpenseForm from './Components/expenseForm/expenseForm';
-import ApprovalAuthorityCard from './Components/approvalAuthorityForm/approvalAuthorityForm';
+import Expense from './screen/hrtech/dashboard/Expense';
+import  ExpenseDashboardHrSpaceScreen from './screen/hrtech/dashboard/parent screen'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-    <ExpenseForm/>
-    <ApprovalAuthorityCard/>
-    </>
+    <Router>
+    <Routes>
+      <Route path="/" element={< ExpenseDashboardHrSpaceScreen/>} />
+      <Route path="/something" element={< Expense/>} />
+     
+    </Routes>
+  </Router>
   );
 }
 

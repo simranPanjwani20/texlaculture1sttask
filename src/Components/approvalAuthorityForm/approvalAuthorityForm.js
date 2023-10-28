@@ -43,7 +43,7 @@ const StyledButton =styled("button")(({ theme }) => ({
   }));
 
 
-const ApprovalAuthorityCard = () => {
+const ApprovalAuthorityForm = () => {
 
   return (
     <StyledCard >
@@ -90,4 +90,4 @@ const ApprovalAuthorityCard = () => {
   );
 };
 
-export default ApprovalAuthorityCard;
+export default ApprovalAuthorityForm;
